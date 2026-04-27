@@ -1,13 +1,28 @@
-# run-ai-on-kaggle-free
+# Run AI on Kaggle (Free Dual T4 GPUs)
 
-- Go to Kaggle
-- Create an account
-    - Verify with your phone
-- Create a notebook
-    - Click on settings -> Enable a GPU
-- Paste this script:
+Turn a free Kaggle notebook into a high-performance backend for your local VS Code setup. This script automates the installation of **Ollama**, configures **Dual Tesla T4 GPUs**, and exposes the API via a **Cloudflare Tunnel**.
 
-```bash
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white)](https://www.kaggle.com/)
+[![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)](https://ollama.com/)
+
+## ✨ Features
+* **Zero Cost:** Uses Kaggle's free tier (30 hours of GPU/week).
+* **High Performance:** Full GPU acceleration on 2x NVIDIA Tesla T4 (32GB combined VRAM).
+* **Seamless Integration:** Designed specifically for the **Continue** extension in VS Code.
+* **Auto-Config:** Automatically generates the JSON block for your VS Code settings.
+
+## 🛠️ Prerequisites
+1. **Kaggle Account:** [Sign up here](https://www.kaggle.com/).
+2. **Phone Verification:** Required by Kaggle to enable GPU access.
+3. **GPU Enabled:** In your Kaggle notebook sidebar, set **Accelerator** to `GPU T4 x2`.
+
+## 🚀 Quick Start
+
+1. Create a new Kaggle Notebook.
+2. Ensure **Internet on** is toggled in the settings.
+3. Paste the following script into a cell and run it:
+
+```python
 import subprocess
 import os
 import time
