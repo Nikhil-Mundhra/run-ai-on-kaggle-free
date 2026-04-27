@@ -4,7 +4,8 @@
 - Create an account
 - Create a notebook
 - Paste this script:
-bash```
+
+```bash
 import subprocess
 import os
 import time
