@@ -1,8 +1,10 @@
 # run-ai-on-kaggle-free
 
-- Go to kaggle
+- Go to Kaggle
 - Create an account
+    - Verify with your phone
 - Create a notebook
+    - Click on settings -> Enable a GPU
 - Paste this script:
 
 ```bash
